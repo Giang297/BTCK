@@ -1,0 +1,228 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Menu container to hold both tables side by side */
+.menu-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+}
+
+/* Individual menu styles */
+.menu {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    overflow-y: auto;
+    max-height: 400px; /* This allows for scroll if the content is too long */
+}
+
+/* Selection Table */
+.selection-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.selection-table th,
+.selection-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    font-size: 16px;
+}
+
+.selection-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.selection-table td a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.selection-table td a:hover {
+    color: #0056b3;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination a {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
+}
+
+.pagination span {
+    font-size: 16px;
+    color: #343a40;
+}
+
+/* Schedule container */
+.schedule {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.schedule h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #495057;
+}
+
+.schedule-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.schedule-table td {
+    background-color: #f8f9fa;
+}
+
+.schedule-table .session {
+    font-weight: bold;
+    background-color: #e9ecef;
+}
+
+.schedule-table .separator td {
+    height: 20px;
+    background-color: #343a40;
+}
+
+/* Logout Button */
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* Schedule Button */
+#schedule-btn {
+    padding: 10px 20px;
+    background-color: #007bff; /* Same blue as table headers */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#schedule-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+#schedule-btn:active {
+    background-color: #004085; /* Darker shade on active */
+    transform: translateY(0); /* Reset position on click */
+}
+
+/* Centering the schedule button if needed */
+.schedule-control {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .schedule h2 {
+        font-size: 20px;
+    }
+
+    .selection-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        font-size: 14px;
+    }
+}
