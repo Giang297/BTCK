@@ -26,9 +26,11 @@ Clone repository:
 
 git clone https://github.com/yourusername/school-schedule-system.git
 cd school-schedule-system
+
 Cài đặt các thư viện yêu cầu:
 
 pip install -r requirements.txt
+
 Thiết lập biến môi trường (tùy chọn):
 
 Trong file .env, thiết lập FLASK_SECRET_KEY để bảo mật phiên làm việc Flask.
