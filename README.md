@@ -25,6 +25,7 @@ Hướng dẫn cài đặt
 Clone repository:
 
 git clone https://github.com/yourusername/school-schedule-system.git
+
 cd school-schedule-system
 
 Cài đặt các thư viện yêu cầu:
